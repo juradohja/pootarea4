@@ -26,12 +26,9 @@ public class MiVentana extends JFrame{
 		desc3 = new JLabel("Precio:");
 		total = new JLabel();
 		char1 = new JTextField(20);
-		char1.addActionListener(new FieldListener());
 		char2 = new JTextField(20);
-		char2.addActionListener(new FieldListener());
 		char2.setText("0");
 		char3 = new JTextField(20);
-		char3.addActionListener(new FieldListener());
 		addArticulo = new JButton("Agregar producto");
 		addArticulo.addActionListener(new ButtonListener());
 		add(desc1);
@@ -42,12 +39,6 @@ public class MiVentana extends JFrame{
 		add(char3);
 		add(addArticulo);
 		add(total);
-	}
-
-	public class FieldListener implements ActionListener{
-		public void actionPerformed(ActionEvent event){
-			
-		}
 	}
 
 	public class ButtonListener implements ActionListener{
